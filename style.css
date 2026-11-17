@@ -1,0 +1,132 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f6;
+    color: #333;
+}
+
+header {
+    background: #9b2675;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+.container {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.container h1 {
+    color: #9b2675;
+    margin-bottom: 10px;
+}
+
+.sos-section {
+    background: white;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 20px;
+    max-width: 400px;
+    box-shadow: 0 4px 15px #e5c5d8;
+}
+
+.sos-button {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 7px solid #ffc0cb;
+    background: #e6004c;
+    color: white;
+    font-size: 38px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sos-section h3 {
+    margin: 20px 0 10px;
+    color: #9b2675;
+}
+
+.features {
+    display: grid;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.features button {
+    padding: 17px;
+    border: none;
+    border-radius: 12px;
+    background: #9b2675;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#result {
+    margin: 20px;
+    overflow-wrap: anywhere;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+
+.contact-section {
+    background: white;
+    padding: 25px;
+    margin: 25px auto;
+    max-width: 400px;
+    border-radius: 18px;
+    box-shadow: 0 4px 15px #e5c5d8;
+}
+
+.contact-section h2 {
+    color: #9b2675;
+    margin-bottom: 20px;
+}
+
+.contact-section input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.contact-section button {
+    width: 100%;
+    padding: 13px;
+    background: #9b2675;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-item {
+    padding: 12px;
+    margin-top: 10px;
+    background: #fff0f6;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-item button {
+    margin-top: 8px;
+    background: #e6004c;
+}

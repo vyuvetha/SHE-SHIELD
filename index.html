@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHE SHIELD - Women Safety</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#9b2675">
+</head>
+<body>
+
+    <header>
+        <h2>🛡️ SHE SHIELD</h2>
+        <p>Your Safety, Our Priority</p>
+    </header>
+
+    <main class="container">
+        <h1>Welcome to SHE SHIELD</h1>
+        <p>Your personal safety companion</p>
+
+        <div class="sos-section">
+            <button class="sos-button" onclick="sendSOS()">
+                SOS
+            </button>
+            <h3>Emergency Help</h3>
+            <p>Tap the button when you need help</p>
+        </div>
+
+        <div class="features">
+            <button onclick="getLocation()">📍 My Location</button>
+            <button onclick="addContact()">👥 Emergency Contacts</button>
+            <button onclick="makeCall()">📞 Emergency Call</button>
+        </div>
+
+        <div id="result"></div>
+
+<div class="contact-section">
+    <h2>Emergency Contacts</h2>
+
+    <input type="text" id="contactName"
+           placeholder="Enter Contact Name">
+
+    <input type="tel" id="contactNumber"
+           placeholder="Enter Mobile Number">
+
+    <button onclick="addContact()">
+        + Add Contact
+    </button>
+
+    <div id="contactList"></div>
+</div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 SHE SHIELD</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+<script>
+if ("serviceWorker" in navigator) {
+    window.addEventListener("load", function() {
+        navigator.serviceWorker.register("./service-worker.js")
+            .then(function() {
+                console.log("SHE SHIELD Service Worker Registered!");
+            })
+            .catch(function(error) {
+                console.log("Service Worker Error:", error);
+            });
+    });
+}
+</script>
+
+</body>
+</html>
