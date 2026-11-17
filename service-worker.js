@@ -1,12 +1,15 @@
 
-const CACHE_NAME = "she-shield-v2";
+
+const CACHE_NAME = "she-shield-v3";
 
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
     "./style.css",
     "./script.js",
-    "./manifest.json"
+    "./manifest.json",
+    "./icon-192.png",
+    "./icon-512.png"
 ];
 
 // Install Service Worker
@@ -37,7 +40,6 @@ self.addEventListener("activate", event => {
 
 // Fetch cached files
 self.addEventListener("fetch", event => {
-
     if (event.request.method !== "GET") return;
 
     const url = new URL(event.request.url);
